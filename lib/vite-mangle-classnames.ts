@@ -48,7 +48,7 @@ export const mangleClassNames = (): PluginOption => ({
     for (const [fileName, file] of fileEntries) {
       if (file.type === 'chunk' && fileName.endsWith('.js')) {
         for (const [name, mangledName] of classNamesMap.entries()) {
-          file.code = file.code.replaceAll(
+          file.code = file.code.replace(
             new RegExp(`\\b${name}\\b`, 'g'),
             mangledName,
           )
