@@ -3,9 +3,9 @@
   "version": "1.0.4",
   "description": "Lightweight on device music player right in your browser.",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
-    "serve": "vite preview",
+    "serve": "vite preview --host",
     "lint": "npx eslint src",
     "lint:fix": "npm run lint -- --fix",
     "prettier": "npx prettier src --check",
@@ -28,7 +28,7 @@
     "eslint-plugin-prettier": "^3.4.0",
     "prettier": "^2.3.2",
     "typescript": "^4.3.5",
-    "vite": "^2.4.2",
+    "vite": "^2.5.10",
     "vite-plugin-html": "^2.0.7",
     "vite-plugin-solid": "^2.0.0"
   },
@@ -53,6 +53,7 @@
     "safari-14-idb-fix": "^1.0.4",
     "solid-js": "1.0.3",
     "solid-transition-group": "0.0.8",
-    "solid-utils": "^0.8.1"
+    "solid-utils": "^0.8.1",
+    "webtorrent": "^1.5.5"
   }
 }

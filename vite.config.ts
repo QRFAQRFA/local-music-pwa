@@ -14,6 +14,12 @@ const createMScreenshot = (name: string, sizes: string) => ({
 })
 
 export default defineConfig({
+  server: {
+    hmr: {
+      protocol: 'ws',
+      host: 'localhost'
+    }
+  },
   build: {
     target: 'esnext',
     polyfillDynamicImport: false,
